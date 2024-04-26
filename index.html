@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gerenciador de Tarefas</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="container">
     <h1>Lista de Tarefas</h1>
-    <input type="text" id="titulo" placeholder="Digite o título da tarefa">
-    <textarea id="descricao" placeholder="Digite a descrição da tarefa"></textarea>
-    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
-    <table id="tabela">
+
+    <form id="form-adicionar-tarefa">
+        <label for="titulo-tarefa">Título:</label>
+        <input type="text" id="titulo-tarefa" name="titulo-tarefa" required>
+
+        <label for="descricao-tarefa">Descrição:</label>
+        <textarea id="descricao-tarefa" name="descricao-tarefa" rows="5" required></textarea>
+
+        <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <table id="tabela-tarefas">
         <thead>
             <tr>
                 <th>Título</th>
                 <th>Descrição</th>
-                <th>Ação</th>
+                <th>Ações</th>
             </tr>
         </thead>
-        <tbody id="lista-tarefas">
-        </tbody>
+        <tbody>
+            </tbody>
     </table>
-</div>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

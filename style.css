@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#form-adicionar-tarefa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#form-adicionar-tarefa label {
+    margin-bottom: 5px;
+}
+
+#form-adicionar-tarefa input,
+#form-adicionar-tarefa textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#tabela-tarefas {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tabela-tarefas th,
+#tabela-tarefas td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+#tabela-tarefas tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+#tabela-tarefas button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#tabela-tarefas button:hover {
+    background-color: #da2026;
+}
