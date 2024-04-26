@@ -7,8 +7,6 @@ formAdicionarTarefa.addEventListener('submit', function(event) {
     const tituloTarefa = document.getElementById('titulo-tarefa').value;
     const descricaoTarefa = document.getElementById('descricao-tarefa').value;
 
-    
-
     adicionarTarefa(tituloTarefa, descricaoTarefa);
 
     formAdicionarTarefa.reset();
