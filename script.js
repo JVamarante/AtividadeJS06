@@ -7,10 +7,7 @@ formAdicionarTarefa.addEventListener('submit', function(event) {
     const tituloTarefa = document.getElementById('titulo-tarefa').value;
     const descricaoTarefa = document.getElementById('descricao-tarefa').value;
 
-    if (tituloTarefa === '' || descricaoTarefa === '') {
-        alert('Preencha todos os campos!');
-        return;
-    }
+    
 
     adicionarTarefa(tituloTarefa, descricaoTarefa);
 
