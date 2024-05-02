@@ -33,9 +33,9 @@ function adicionarTarefa(titulo, descricao) {
     linha.appendChild(celulaDescricao);
     linha.appendChild(celulaAcoes);
 
-    tabelaTarefas.getElementsByTagName('tbody')[0].appendChild(linha); // Corrigido para selecionar o tbody corretamente
+    tabelaTarefas.getElementsByTagName('tbody')[0].appendChild(linha);
 }
 
 function removerTarefa(linha) {
-    tabelaTarefas.getElementsByTagName('tbody')[0].removeChild(linha); // Corrigido para selecionar o tbody corretamente
+    tabelaTarefas.getElementsByTagName('tbody')[0].removeChild(linha);
 }
